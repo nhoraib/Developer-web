@@ -29,26 +29,31 @@
                         
                         <div class="border border-gray-200 w-full mb-6"></div>
                         <div>
-                            <h3 class="text-3xl font-bold mb-4">
-                                About Devolopment
+                            <h3 class="text-4xl font-bold mb-4">
+                                About us
                             </h3>
                             
                             <div class="text-lg space-y-6">
+                                <h4 class="text-3xl font-bold mb-4">
+                                    What Do Developer Do? </h4>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Eligendi non reprehenderit
-                                    facilis architecto autem quam
-                                    necessitatibus, odit quod, repellendus
-                                    voluptate cum. Necessitatibus a id tenetur.
-                                    Error numquam at modi quaerat.
+                                Software developers use their programming skills to create new software and improve existing software applications. 
+                                They design and write the code used to build everything from operating systems to mobile apps to video games. Often, 
+                                project managers provide software developers with an organisation's business goals, and they translate those needs
+                                 into software requirements. 
                                 </p>
+                                <h5 class="text-3xl font-bold mb-4">
+                                What is software development? </h5>
                                 <p>
-                                    Lorem, ipsum dolor sit amet consectetur
-                                    adipisicing elit. Quaerat praesentium eos
-                                    consequuntur ex voluptatum necessitatibus
-                                    odio quos cupiditate iste similique rem in,
-                                    voluptates quod maxime animi veritatis illum
-                                    quo sapiente.
+                                    Analysing the needs of software users
+
+Designing, testing, and building software programs to meet user needs
+
+Creating models and diagrams that outline the code needed to develop software and applications
+
+Performing maintenance and testing to keep software functioning 
+
+Documenting the process to provide the information required for upgrades and maintenance
                                 </p>
 
                                 
