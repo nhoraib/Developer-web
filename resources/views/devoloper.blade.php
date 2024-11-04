@@ -39,21 +39,9 @@
                             
                             <div class="text-lg space-y-6">
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Eligendi non reprehenderit
-                                    facilis architecto autem quam
-                                    necessitatibus, odit quod, repellendus
-                                    voluptate cum. Necessitatibus a id tenetur.
-                                    Error numquam at modi quaerat.
+                                    About him self what will do and how many programmer language had 
                                 </p>
-                                <p>
-                                    Lorem, ipsum dolor sit amet consectetur
-                                    adipisicing elit. Quaerat praesentium eos
-                                    consequuntur ex voluptatum necessitatibus
-                                    odio quos cupiditate iste similique rem in,
-                                    voluptates quod maxime animi veritatis illum
-                                    quo sapiente.
-                                </p>
+                                
 
                                 <a
                                     href="mailto:test@test.com"
