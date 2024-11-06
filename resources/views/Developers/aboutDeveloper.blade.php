@@ -26,10 +26,10 @@
                             alt=""
                         />
                         
-                        <h3 class="text-2xl mb-2">Name</h3>
+                        <h3 class="text-2xl mb-2">heloo </h3>
                         
                         <div class="text-lg my-4">
-                            <i class="fa-solid fa-location-dot"></i> Position
+                            <i class="fa-solid fa-location-dot"></i> {{$DevelopM->Position}}
                         </div>
                         <div class="border border-gray-200 w-full mb-6"></div>
                         <div>
@@ -39,7 +39,7 @@
                             
                             <div class="text-lg space-y-6">
                                 <p>
-                                    About him self what will do and how many programmer language had 
+                                {{$DevelopM->about}}
                                 </p>
                                 
 

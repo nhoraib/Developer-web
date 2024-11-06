@@ -22,7 +22,7 @@
                         
                     </header>
 
-                    <form  action="{{ route('create.confirm') }}"  > 
+                    <form method="POST" action="{{route('Developers.store')}}"  > 
                         
                         @csrf
                         
@@ -31,7 +31,7 @@
                             <label
                                 for="name"
                                 class="inline-block text-lg mb-2"
-                                >Devoloper Name</label
+                                > Devoloper Name</label
                             >
                             <input
                                 type="text"
@@ -40,22 +40,33 @@
                             />
 
                             @error('name')
-                           <p"p.text-red-500.text-xs.mt-1">{{$message}}</p>
+                           <p class="text-red-500 text-xs mt-1">{{$message}}</p>
                             @enderror
                         </div>
 
+
                         <div class="mb-6">
-                            <label for="title" class="inline-block text-lg mb-2"
-                                >Position Title</label
+        <label for="email" class="inline-block text-lg mb-2">
+          Contact Email
+        </label>
+        <input type="text" class="border border-gray-200 rounded p-2 w-full" 
+        name="email" value="{{old('email')}}" />
+
+        @error('email')
+                           <p class="text-red-500 text-xs mt-1">{{$message}}</p>
+                            @enderror
+                        <div class="mb-6">
+                            <label for="Position" class="inline-block text-lg mb-2"
+                                >Position</label
                             >
                             <input
                                 type="text"
                                 class="border border-gray-200 rounded p-2 w-full"
-                                name="title"
+                                name="Position"
                                 placeholder="Example: Senior  Developer"
                             />
-                            @error('title')
-                           <p"p.text-red-500.text-xs.mt-1">{{$message}}</p>
+                            @error('Position')
+                           <p class="text-red-500 text-xs mt-1">{{$message}}</p>
                             @enderror
                         </div>
 
@@ -74,15 +85,15 @@
                                 placeholder="Include tasks, requirements, salary, etc"
                             ></textarea>
                             @error('about')
-                           <p"p.text-red-500.text-xs.mt-1">{{$message}}</p>
+                           <p class="text-red-500 text-xs mt-1">{{$message}}</p>
                             @enderror
                         </div>
 
                         <div class="mb-6">
                             <button
-                                class="bg-laravel text-white rounded py-2 px-4 hover:bg-black"
+                              class="bg-laravel text-white rounded py-2 px-4 hover:bg-black"
                             >
-                                Create Gig
+                                Create Developer
                             </button>
 
                             <a href="/" class="text-black ml-4"> Back </a>

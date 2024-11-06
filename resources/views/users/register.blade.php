@@ -22,9 +22,9 @@
                                 class="border border-gray-200 rounded p-2 w-full"
                                 name="name" value="{{old('name')}}"
                             />
-                            <p class="text-red-500 text-xs mt-1">
-                                Please Enter Your Name
-                            </p>
+                            @error('name')
+                           <p class="text-red-500 text-xs mt-1">{{$message}}</p>
+                            @enderror
                         </div>
 
                         <div class="mb-6">
@@ -37,9 +37,9 @@
                                 name="email" value="{{old('email')}}"
                             />
                             <!-- Error Message-->
-                            <p class="text-red-500 text-xs mt-1">
-                                Please enter a valid email
-                            </p>
+                            @error('email')
+                           <p class="text-red-500 text-xs mt-1">{{$message}}</p>
+                            @enderror
                         </div>
 
                         <div class="mb-6">
@@ -54,6 +54,10 @@
                                 class="border border-gray-200 rounded p-2 w-full"
                                 name="password" value="{{old('password')}}"
                             />
+
+                            @error('password')
+                           <p class="text-red-500 text-xs mt-1">{{$message}}</p>
+                            @enderror
                         </div>
 
                         <div class="mb-6">

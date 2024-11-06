@@ -9,14 +9,12 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
-
-     //create table in database
     public function up(): void
     {
-        Schema::create('_stuff', function (Blueprint $table) {
+        Schema::create('DevelopM', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('title');
+           // $table->string('title');
             $table->string('email');
             $table->string('Position');
             $table->longText('about');
@@ -29,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('_stuff');
+        Schema::dropIfExists('DevelopM');
     }
 };

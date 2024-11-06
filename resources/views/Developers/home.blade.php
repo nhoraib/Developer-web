@@ -21,7 +21,8 @@
 
 <!-- show each box of devoloper card and we have it on array 4 -->
  
-<?php foreach($information as $infor): ?> <!-- foreach is a loop -->
+
+<?php foreach($DevelopM as $DevelopM): ?> <!-- foreach is a loop -->
     
    <div class="bg-gray-50 border border-gray-200 rounded p-6">
                     <div class="flex">
@@ -33,12 +34,12 @@
                         
                         <div>
                             <h3 class="text-2xl">
-                                <a href="/show">{{$infor['name']}} </a>
+                                <a href="/Developers/aboutDeveloper">{{$DevelopM->name}} </a>
                             </h3>
-                            <div class="text-xl font-bold mb-4">{{$infor['about']}}</div>
+                            <div class="text-xl font-bold mb-4">{{$DevelopM->Position}}</div>
                             
                             <div class="text-lg mt-4">
-                                <i class="fa-solid fa-location-dot"></i> {{$infor['position']}}
+                                <i class="fa-solid fa-location-dot"></i> {{$DevelopM->about}}
                             </div>
                         </div>
                     </div>
@@ -48,12 +49,17 @@
         >
             <p class="ml-2">Copyright &copy; 2024, All Rights reserved</p>
             <a
-                href="/create"
+                href="/Developers/create"
                 class="absolute top-1/3 right-10 bg-black text-white py-2 px-5"
-                >Post new devoloper</a
+                >Post new devoloper</a 
+
+
             >
             
         </footer>
- <?php endforeach; ?>
+
+        
+ <?php 
+ endforeach;?>
 </div>
  @endsection

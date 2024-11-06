@@ -25,9 +25,9 @@
                                 name="email" value="{{old('email')}}"
                             />
                             <!-- Error Message-->
-                            <p class="text-red-500 text-xs mt-1">
-                                Please enter a valid email
-                            </p>
+                            @error('email')
+                           <p class="text-red-500 text-xs mt-1">{{$message}}</p>
+                            @enderror
                         </div>
 
                         <div class="mb-6">
