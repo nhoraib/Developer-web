@@ -25,26 +25,32 @@ class UserController extends Controller
 
 
      // Create New User
-     public function store(Request $request) {
-        $formFields = $request->validate([
-            'name' => ['required', 'min:3'],
-            'email' => ['required', 'email', Rule::unique('users', 'email')],
-            'password' => 'required|confirmed|min:6'
-        ]);
+     public function storeRegister(Request $request) {
+       
+        //create user
+        $formFields = User::create($request->except(['_token','password2']));
 
         // Hash Password
         $formFields['password'] = bcrypt($formFields['password']);
-
-        // Create User
-        $user = User::create($formFields);
+            
+       
 
         // Login
-        auth()->login($user);
+        auth()->login($formFields);
                                                                
         return redirect('/')->with('message', 'User created & your logged in ');
     }
 
+    // Logout 
+    public function logout(Request $request) {
+        auth()->logout();
 
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+
+        return redirect('/')->with('message', 'You have been logged out!');
+
+    }
 
       
 

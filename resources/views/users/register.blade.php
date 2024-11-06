@@ -12,7 +12,8 @@
                         <p class="mb-4">Create an account </p>
                     </header>
 
-                    <form action="">
+                    <form meathod="POST" action="{{route('RegisterStore')}}">
+                        @csrf
                         <div class="mb-6">
                             <label for="name" class="inline-block text-lg mb-2">
                                 Name
@@ -52,12 +53,10 @@
                             <input
                                 type="password"
                                 class="border border-gray-200 rounded p-2 w-full"
-                                name="password" value="{{old('password')}}"
+                                name="password" 
                             />
 
-                            @error('password')
-                           <p class="text-red-500 text-xs mt-1">{{$message}}</p>
-                            @enderror
+                            
                         </div>
 
                         <div class="mb-6">
@@ -70,7 +69,7 @@
                             <input
                                 type="password"
                                 class="border border-gray-200 rounded p-2 w-full"
-                                name="password2"   value="{{old('password_confirmation')}}"
+                                name="password2"
                             />
                         </div>
 
